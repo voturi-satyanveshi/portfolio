@@ -1,0 +1,165 @@
+/* =========================
+   DOMAIN SECTION
+========================= */
+.domain-section {
+  min-height: 100vh;
+  background: #0e0e0e;
+  color: white;
+  padding-bottom: 100px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+.domain-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 120px 80px 40px 80px;
+}
+
+.domain-title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Buttons */
+.back-btn,
+.switch-btn {
+  padding: 10px 20px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover,
+.switch-btn:hover {
+  background: #0099ff;
+  border-color: #0099ff;
+}
+
+
+/* =========================
+   GRID
+========================= */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 85%;
+  margin: 80px auto;
+}
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+.project-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: white;
+
+  border-radius: 14px;
+  overflow: hidden;
+
+  background: transparent;
+
+  transition: 0.4s ease;
+
+  /* Premium depth */
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Electric Blue Glow on Hover */
+.project-card:hover {
+  transform: translateY(-14px) scale(1.02);
+
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.8),
+    0 0 35px rgba(0, 153, 255, 0.55);
+}
+
+
+/* =========================
+   IMAGE WRAPPER
+========================= */
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+/* IMAGE */
+.image-wrapper img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: 0.5s ease;
+}
+
+
+/* =========================
+   NETFLIX STYLE OVERLAY
+========================= */
+.hover-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.6),
+    transparent
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.hover-overlay h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.hover-overlay p {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+
+/* Hover Effects */
+.project-card:hover .image-wrapper img {
+  transform: scale(1.1);
+}
+
+.project-card:hover .hover-overlay {
+  opacity: 1;
+}
+
+
+/* =========================
+   Optional Inner Edge Glow
+========================= */
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  pointer-events: none;
+
+  box-shadow: inset 0 0 30px rgba(0, 153, 255, 0.12);
+}

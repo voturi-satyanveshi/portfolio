@@ -1,0 +1,160 @@
+.about-section {
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 80px 0;
+  position: relative;
+}
+
+/* Floating Nav */
+.about-nav {
+  position: sticky;
+  top: 30px;
+
+  margin: 0 auto 40px auto;
+  width: fit-content;
+
+  display: flex;
+  gap: 50px;
+
+  padding: 18px 60px;
+  border-radius: 60px;
+
+  background: rgba(20, 20, 20, 0.92);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+
+  z-index: 100;
+}
+
+.about-nav.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-nav span {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.about-nav span:hover {
+  color: #bbbbbb;
+}
+
+
+
+
+/* Main Layout */
+.about-container {
+  display: flex;
+  width: 85%;
+  margin: 120px auto 0 auto;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.about-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-left h1 {
+  font-size: 160px;
+  color: #D3D3D3;
+  line-height: 0.9;
+  font-weight: 700;
+}
+
+/* RIGHT SIDE (Torn Paper Style) */
+.about-right {
+  width: 60%;
+  background: #fafafa;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+/* Intro */
+.intro-block h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.intro-block p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* Skills */
+.skills-block {
+  margin-top: 40px;
+}
+
+.skills-block h3 {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.skill-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.skill-card p {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+.about-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.about-nav a:hover {
+  color: #bbbbbb;
+}
+.about-nav a:visited {
+  color: #ffffff;
+}
+

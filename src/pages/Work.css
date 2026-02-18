@@ -1,0 +1,110 @@
+.work-section {
+  min-height: 100vh;
+
+  /* Clean corporate background */
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 0, 0, 0.04),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(0, 0, 0, 0.04),
+      transparent 40%
+    ),
+    #f5f6f8;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 40px;
+}
+
+/* TITLE */
+.work-title {
+  font-size: 48px;
+  margin-bottom: 90px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+/* GRID */
+.profile-grid {
+  display: flex;
+  gap: 70px;
+}
+
+/* CARD */
+.profile-card {
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.profile-avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 20px;
+
+  background: white;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.06),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 48px;
+  font-weight: 600;
+  color: #222;
+
+  transition: all 0.3s ease;
+}
+
+.profile-name {
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #444;
+  transition: 0.3s ease;
+}
+
+/* HOVER */
+.profile-card:hover .profile-avatar {
+  transform: translateY(-10px);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.profile-card:hover .profile-name {
+  color: #000;
+}
+.work-content {
+  margin-top: 20px;   /* moves only text & cards down */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertical center */
+  align-items: center;
+  margin-top: 140px;   /* adjust this value */
+  text-align: center;
+
+}
+.about-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.about-nav a:hover {
+  color: #bbbbbb;
+}
+.about-nav a:visited {
+  color: #ffffff;
+}

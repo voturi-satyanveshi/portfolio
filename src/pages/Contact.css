@@ -1,0 +1,80 @@
+.contact-section {
+  min-height: 100vh;
+  background: #f4f4f6;
+}
+
+/* Content Wrapper */
+.contact-content {
+  margin-top: 140px;
+  text-align: center;
+}
+
+/* Title */
+.contact-title {
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+/* Subtitle */
+.contact-subtitle {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 70px;
+}
+
+/* Grid */
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+/* Card */
+.contact-card {
+  background: white;
+  padding: 40px 60px;
+  border-radius: 18px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.06),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+
+  transition: 0.3s ease;
+}
+
+.contact-card h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #222;
+}
+
+.contact-card p {
+  font-size: 15px;
+  color: #555;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+.contact-card {
+  text-decoration: none;
+  color: inherit;
+}
+.about-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.about-nav a:hover {
+  color: #bbbbbb;
+}
+.about-nav a:visited {
+  color: #ffffff;
+}
